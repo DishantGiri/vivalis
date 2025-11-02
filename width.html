@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Screen Width Example</title>
+</head>
+
+<body>
+    <h2>Screen and Viewport Width</h2>
+    <p>Screen width: <span id="screenWidth"></span> pixels</p>
+    <p>Viewport width: <span id="viewportWidth"></span> pixels</p>
+
+    <script>
+        // Function to display widths
+        function showWidths() {
+            document.getElementById("screenWidth").textContent = screen.width;
+            document.getElementById("viewportWidth").textContent = window.innerWidth;
+        }
+
+        // Show immediately
+        showWidths();
+
+        // Update when window resizes
+        window.addEventListener('resize', showWidths);
+    </script>
+</body>
+
+</html>

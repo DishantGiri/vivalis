@@ -1,0 +1,323 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.contactsection{
+    display: flex;
+    flex-direction: col;
+    background-color: rgba(237, 242, 246, 0.688);
+    justify-content:start ;
+    padding:0 30px;
+    width: 1150px;
+    align-items:center;
+    gap: 150px;
+    height: 120px;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactlogo{
+    height: 70px;
+    width: 80px;
+     object-fit: cover;
+   
+
+}
+.contactlogosection{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 40%;
+
+}
+
+
+.contactlogosection h3{
+    font-family: "Poppins";
+}
+.contactlogo img{
+    height: 100%;
+    width: 100%;
+   
+}
+
+.phone p:nth-child(1){
+color: blue;
+font-size: 16px;
+/* margin-bottom: 20px; */
+font-family: "Poppins";
+}
+
+.phone p:nth-child(2){
+    font-size: 16px;
+    font-family: "Poppins";
+}
+
+.contactwrappe{
+    display: flex;
+    align-items: center;
+justify-content: center;
+}
+
+.headingcontact{
+    font-size: 23px;
+    font-family: "Poppins";
+    text-align: center;
+    padding-top: 75px;
+    margin-bottom: 80px;
+
+  font-family: "Rubik", sans-serif;
+}
+
+.firstparagraph{
+    text-align: center;
+    font-size: 16px;
+  
+    font-family: "Poppins";
+
+    
+}
+
+.firstcontent{
+    display: flex;
+    
+}
+
+
+
+
+
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+ 
+
+}
+
+.faq {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 880px;
+  border-radius: 2px;
+  /* height: 100px; */
+  /* height:  80px; */
+  border-color: #dee2e6;
+  /* border: 1px solid #dee2e6; */
+  /* padding: 18px; */
+  box-sizing: border-box;
+  /* gap:10px; */
+
+  /* gap: 20px; */
+}
+
+.faq .que {
+  /* height: 90px; */
+  height: 35px;
+
+  /* padding-left: 260px; */
+
+
+
+}
+
+
+
+.que {
+  display: flex;
+  justify-content: ;
+  align-items: center;
+  width: 100%;
+  /* gap: 40px; */
+  /* gap:20vw; */
+  /* background-color:red; */
+  /* height: 6vh; */
+  border-color: #dee2e6;
+    gap: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  /* backgrou1d-color: #fff8d1; */
+  /* padding: 0 10px; */
+  /* transition: all 0.5s ease, padding 0.4s ease; */
+
+}
+
+.que:hover {
+  /* background-color: #e0b83c; */
+}
+    .answer{
+      
+    }
+
+
+.active .answer {
+  /* height: 200px;  */
+  max-height: 500px;
+  /* padding: 15px 20px; */
+  /* padding: 15px 5px; */
+  width: 100%;
+
+  /* padding-top: 10px; */
+  padding-bottom: 18px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  
+    background-color:#ededf2 ;
+    box-sizing: border-box;
+    padding: 30px;
+   
+   
+}
+
+
+
+.active svg {
+  transform: rotate(180deg);
+}
+
+.que svg {
+  /* transition: transform 0.3s ease; */
+  margin-left: 10px;
+}
+
+.que span {
+  font-weight: bold;
+  font-size: 16px;
+  color:#1e3f88;
+  font-family: sans-serif;
+}
+
+.faqtop {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: bolder;
+  color: #141b34;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Responsive overrides: don't change the original rules above; only override where needed. */
+
+@media screen and (max-width: 1200px) {
+  .contactsection {
+    width: 90%;
+    max-width: 1000px;
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contactsection {
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    gap: 20px;
+    height: auto;
+    padding: 30px;
+  }
+  
+  .contactlogosection {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .phone {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .faq {
+    width: 90%;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headingcontact {
+    font-size: 20px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .firstparagraph {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  
+  .contactsection {
+    padding: 20px;
+  }
+  
+  .faq {
+    width: 95%;
+  }
+  
+  .faqtop {
+    font-size: 22px;
+  }
+  
+  .que span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headingcontact {
+    font-size: 18px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .firstparagraph {
+    font-size: 13px;
+  }
+  
+  .contactlogosection h3 {
+    font-size: 16px;
+  }
+  
+  .phone p {
+    font-size: 14px;
+  }
+  
+  .contactlogo {
+    height: 50px;
+    width: 60px;
+  }
+  
+  .faqtop {
+    font-size: 18px;
+  }
+  
+  .que span {
+    font-size: 13px;
+  }
+  
+  .active .answer {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
