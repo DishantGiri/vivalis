@@ -1,95 +1,100 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-.contactsection{
-    display: flex;
-    flex-direction: col;
-    background-color: rgba(237, 242, 246, 0.688);
-    justify-content:start ;
-    padding:0 30px;
-    width: 1150px;
-    align-items:center;
-    gap: 150px;
-    height: 120px;
+.contactsection {
+  display: flex;
+  flex-direction: col;
+  background-color: rgba(237, 242, 246, 0.688);
+  justify-content: start;
+  padding: 0 30px;
+  width: 1150px;
+  align-items: center;
+  gap: 150px;
+  height: 120px;
 
 }
 
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.contactContainer{
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactlogo {
+  height: 70px;
+  width: 80px;
+  object-fit: cover;
+
+
+}
+
+.contactlogosection {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 40%;
+
+}
+
+
+.contactlogosection h3 {
+  font-family: "Poppins";
+}
+
+.contactlogo img {
+  height: 100%;
+  width: 100%;
+
+  .que {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.contactlogo{
-    height: 70px;
-    width: 80px;
-     object-fit: cover;
-   
-
-}
-.contactlogosection{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    width: 40%;
-
-}
-
-
-.contactlogosection h3{
-    font-family: "Poppins";
-}
-.contactlogo img{
-    height: 100%;
     width: 100%;
-   
+    border-color: #dee2e6;
+    gap: 10px;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 14px 18px;
+    border-bottom: 1px solid #e4e7f0;
+    background-color: #f7f8fd;
+  }
+
+  font-size: 16px;
+  font-family: "Poppins";
 }
 
-.phone p:nth-child(1){
-color: blue;
-font-size: 16px;
-/* margin-bottom: 20px; */
-font-family: "Poppins";
+.contactwrappe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.phone p:nth-child(2){
-    font-size: 16px;
-    font-family: "Poppins";
-}
-
-.contactwrappe{
-    display: flex;
-    align-items: center;
-justify-content: center;
-}
-
-.headingcontact{
-    font-size: 23px;
-    font-family: "Poppins";
-    text-align: center;
-    padding-top: 75px;
-    margin-bottom: 80px;
+.headingcontact {
+  font-size: 23px;
+  font-family: "Poppins";
+  text-align: center;
+  padding-top: 75px;
+  margin-bottom: 80px;
 
   font-family: "Rubik", sans-serif;
 }
 
-.firstparagraph{
-    text-align: center;
-    font-size: 16px;
-  
-    font-family: "Poppins";
+.firstparagraph {
+  text-align: center;
+  font-size: 16px;
 
-    
+  font-family: "Poppins";
+
+
 }
 
-.firstcontent{
-    display: flex;
-    
+.firstcontent {
+  display: flex;
+
 }
 
 
@@ -104,7 +109,7 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
- 
+
 
 }
 
@@ -114,84 +119,51 @@ justify-content: center;
   flex-direction: column;
   width: 880px;
   border-radius: 2px;
-  /* height: 100px; */
-  /* height:  80px; */
   border-color: #dee2e6;
-  /* border: 1px solid #dee2e6; */
-  /* padding: 18px; */
   box-sizing: border-box;
-  /* gap:10px; */
-
-  /* gap: 20px; */
+  overflow: hidden;
 }
 
 .faq .que {
-  /* height: 90px; */
-  height: 35px;
-
-  /* padding-left: 260px; */
-
-
-
+  height: auto;
 }
-
-
 
 .que {
   display: flex;
-  justify-content: ;
   align-items: center;
   width: 100%;
-  /* gap: 40px; */
-  /* gap:20vw; */
-  /* background-color:red; */
-  /* height: 6vh; */
   border-color: #dee2e6;
-    gap: 10px;
-  border-radius: 4px;
+  gap: 10px;
+  border-radius: 0;
   cursor: pointer;
+  padding: 14px 18px;
+  border-bottom: 1px solid #e4e7f0;
+  background-color: #f7f8fd;
+  box-sizing: border-box;
 }
-
 
 .answer {
   max-height: 0;
   overflow: hidden;
-  /* backgrou1d-color: #fff8d1; */
-  /* padding: 0 10px; */
-  /* transition: all 0.5s ease, padding 0.4s ease; */
-
+  background-color: #f7f8fd;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 18px;
 }
 
 .que:hover {
-  /* background-color: #e0b83c; */
+  background-color: rgba(30, 63, 136, 0.05);
 }
-    .answer{
-      
-    }
-
 
 .active .answer {
-  /* height: 200px;  */
   max-height: 500px;
-  /* padding: 15px 20px; */
-  /* padding: 15px 5px; */
-  width: 100%;
-
-  /* padding-top: 10px; */
-  padding-bottom: 18px;
+  padding: 14px 18px;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.55;
   text-align: justify;
-  
-    background-color:#ededf2 ;
-    box-sizing: border-box;
-    padding: 30px;
-   
-   
+  border-top: 1px solid #e4e7f0;
 }
-
-
 
 .active svg {
   transform: rotate(180deg);
@@ -204,8 +176,8 @@ justify-content: center;
 
 .que span {
   font-weight: bold;
-  font-size: 16px;
-  color:#1e3f88;
+  font-size: 14px;
+  color: #1e3f88;
   font-family: sans-serif;
 }
 
@@ -238,17 +210,17 @@ justify-content: center;
     height: auto;
     padding: 30px;
   }
-  
+
   .contactlogosection {
     width: 100%;
     justify-content: center;
   }
-  
+
   .phone {
     width: 100%;
     text-align: center;
   }
-  
+
   .faq {
     width: 90%;
     max-width: 600px;
@@ -261,26 +233,47 @@ justify-content: center;
     padding-top: 50px;
     margin-bottom: 50px;
   }
-  
+
   .firstparagraph {
     font-size: 14px;
     padding: 0 20px;
   }
-  
+
   .contactsection {
     padding: 20px;
   }
-  
+
   .faq {
     width: 95%;
+    border: 1px solid #e4e7f0;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
   }
-  
+
   .faqtop {
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 600;
   }
-  
+
+  .que {
+    padding: 10px 8px;
+    gap: 6px;
+  }
+
   .que span {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .active .answer {
+    font-size: 12px;
+    padding: 12px;
+    line-height: 1.5;
+    font-weight: 400;
   }
 }
 
@@ -290,34 +283,50 @@ justify-content: center;
     padding-top: 30px;
     margin-bottom: 30px;
   }
-  
+
   .firstparagraph {
     font-size: 13px;
   }
-  
+
   .contactlogosection h3 {
     font-size: 16px;
   }
-  
+
   .phone p {
     font-size: 14px;
   }
-  
+
   .contactlogo {
     height: 50px;
     width: 60px;
   }
-  
+
+  .faq {
+    border: 1px solid #e4e7f0;
+    border-radius: 0;
+  }
+
   .faqtop {
     font-size: 18px;
+    font-weight: 600;
   }
-  
+
+  .que {
+    padding: 8px 6px;
+    gap: 4px;
+  }
+
   .que span {
-    font-size: 13px;
+    font-size: 11px;
+    font-weight: 400;
+    flex: 1;
+    min-width: 0;
   }
-  
+
   .active .answer {
-    font-size: 14px;
-    padding: 20px;
+    font-size: 11px;
+    padding: 10px;
+    line-height: 1.45;
+    font-weight: 400;
   }
 }
