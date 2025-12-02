@@ -29,277 +29,192 @@
         padding-bottom: 50px;
     }
 
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #fff;
+        color: #111;
+    }
+
+    .contact-page {
+        max-width: var(--container);
+        margin: 36px auto;
+        padding: 28px;
+    }
+
+    .contact-hero {
+        text-align: center;
+        padding: 18px 12px 8px;
+    }
+
+    .contact-hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 6px;
+    }
+
+    .contact-hero p {
+        color: var(--muted);
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin-top: 18px;
+    }
+
+    .card {
+        background: #fafafa;
+        border-radius: 10px;
+        /* add a bit more left padding so content breathes inside the box */
+        padding: 16px 16px 16px 100px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    }
+
+    .card h3 {
+        margin: 0 0 8px 0;
+    }
+
+    .contact-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        /* left-align items inside the card */
+    }
+
+    .contact-list li {
+        margin: 0;
+        color: var(--muted);
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .contact-list a {
+        color: #1e3f88;
+        text-decoration: underline;
+    }
+
+    .address {
+        white-space: pre-line;
+        color: var(--muted);
+        line-height: 1.5;
+    }
+
+    .connect {
+        margin-top: 18px;
+        text-align: center;
+    }
+
+    .contact-icon {
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+        display: inline-block;
+    }
+
+    .connect a {
+        display: inline-block;
+        margin: 6px 8px;
+        padding: 10px 16px;
+        border-radius: 6px;
+        background: #1e3f88;
+        color: #fff;
+        text-decoration: none
+    }
+
     footer {
-        background-color: #f3f3f3;
+        margin-top: 28px;
+        padding: 20px 12px;
         text-align: center;
-        padding: 20px;
-        font-size: 12px;
+        background: #fafafa;
+        border-radius: 6px;
+        color: #666;
     }
 
-    footer p {
-        text-align: center;
-    }
-
-    /* Mobile breakpoint */
-    @media (max-width: 768px) {
-        .terms {
-            padding-bottom: 40px;
+    @media (max-width:800px) {
+        .contact-grid {
+            grid-template-columns: 1fr
         }
 
-        footer {
-            padding: 15px;
-            font-size: 11px;
-        }
-    }
-
-    /* Small mobile devices */
-    @media (max-width: 480px) {
-        .terms {
-            padding-bottom: 30px;
-        }
-
-        footer {
-            padding: 12px;
-            font-size: 10px;
+        .contact-page {
+            padding: 18px
         }
     }
 </style>
+</head>
 
 <body>
 
-    <div class="headingcontact">
+    <main class="contact-page">
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>If you have any questions about Vivalis, our practices, or your experience on our website, we’re here to
+                help. Our support team aims to respond within 24 hours.</p>
+        </section>
 
-        <h2>How To Contact Us</h2>
-    </div>
-    <div>
-
-
-        <p class="firstparagraph">
-            Do you have any questions? Please do not hesitate to contact us directly.<br> Our team will come back to you
-            within a matter of hours to help you.
-        </p>
-
-    </div>
-
-
-
-    <div class="contactContainer">
-        <div class=" contactsection" style="background-color: rgb(255, 255, 255);">
-            <div class="contactlogosection">
-                <div class="contactlogo">
-                    <img src="./assets/mail.webp" alt="">
-                </div>
-                <h3>Product Email Support</h3>
-            </div>
-            <div class="phone">
-                <p style="color:#4477b1; text-decoration: underline;">support@govivalis.com</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="contactContainer">
-        <div class="contactsection">
-            <div class="contactlogosection">
-                <div class="contactlogo">
-                    <img src="./assets/phone.webp" alt="">
-                </div>
-                <h3>Product Phone Support</h3>
-            </div>
-            <div class="phone">
-                <p>+18777039006</p>
-                <p>Mon – Sun 10 AM – 1 AM EST</p>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div class="contactContainer">
-        <div class="contactsection" style="background-color: rgb(255, 255, 255);">
-            <div class="contactlogosection">
-                <div class="contactlogo">
-                    <img src="./assets/mail.webp" alt="">
-                </div>
-                <h3>Order Email Support</h3>
-            </div>
-            <div class="phone">
-                <p style="color:#4477b1; text-decoration: underline;">support@govivalis.com</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="contactContainer">
-        <div class="contactsection">
-            <div class="contactlogosection">
-                <div class="contactlogo">
-                    <img src="./assets/call.webp" alt="">
-                </div>
-                <h3>Order Phone Support</h3>
-            </div>
-            <div class="phone">
-                <p>+18777039006</p>
-                <p>Mon – Sun 10 AM – 1 AM EST</p>
+        <section class="contact-grid" aria-label="Contact methods">
+            <div class="card">
+                <h3>General Inquiries</h3>
+                <p class="muted">For general questions or feedback:</p>
+                <ul class="contact-list">
+                    <li><img src="./assets/mail.webp" class="contact-icon" alt="email"> <a
+                            href="mailto:support@usvivalis.store">support@usvivalis.store</a></li>
+                </ul>
             </div>
 
-
-        </div>
-
-    </div>
-
-    <p style="text-align: center; margin-bottom: 150px;">* Every email call is managed by our friendly customer support
-        agents, and they will reply as soon as possible.</p>
-
-
-
-    <div class="questions">
-
-        <div class="faqtop"><span>FREQUENTLY ASKED QUESTIONS</span></div>
-
-        <div class="faq">
-            <div class="que" style="height: 51px; background-color:#dbdce6;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                    fill="none">
-                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span style="color:black; font-family:'Poppins'; font-weight: bold;">IS VIVALIS right
-                    for Me?</span>
-
+            <div class="card">
+                <h3>Customer Support</h3>
+                <p class="muted">Help with orders, returns, or product information:</p>
+                <ul class="contact-list">
+                    <li><img src="./assets/mail.webp" class="contact-icon" alt="email"> <a
+                            href="mailto:support@usvivalis.store">support@usvivalis.store</a></li>
+                    <li>🕒 Support hours: Mon–Fri 9:00–18:00 PT</li>
+                </ul>
             </div>
-            <div class="answer"> Vivalis has provided remarkable sexual health support for men of all ages, including
-                those in their 30s, 40s, 50s, and even 70s. Because it was engineered based on the teachings of modern
-                science, the Vivalis formula is very gentle yet powerful at the same time, utilizing pure plant
-                ingredients and natural minerals. You can also rest assured knowing it’s manufactured in the United
-                States..</div>
-        </div>
 
-        <div class="faq">
-            <div class="que" style="height: 51px; background-color:#dbdce6;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                    fill="none">
-                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span style="color:black; font-family:'Poppins'; font-weight: bold;">What kind of
-                    result can i expect from Vivalis?</span>
-
+            <div class="card">
+                <h3>Office Address</h3>
+                <p class="address">Vivalis Labs
+                    9641 Sunset Blvd
+                    Beverly Hills, CA 90210
+                    USA</p>
+                <ul class="contact-list">
+                    <li><img src="./assets/phone.webp" class="contact-icon" alt="phone"> <a href="tel:+18775039209">+1
+                            (877) 503-9209</a></li>
+                </ul>
             </div>
-            <div class="answer">Vivalis is a potent and effective formula designed to enhance erectile function and
-                sexual stamina. Many users enjoy taking Vivalis every day with fantastic results, and we have not
-                received a single complaint. Once your body adapts to the ingredients, you will likely notice improved
-                endurance and performance.</div>
-        </div>
 
-
-        <div class="faq">
-            <div class="que" style="height: 51px; background-color:#dbdce6;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                    fill="none">
-                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span style="color:black; font-family:'Poppins'; font-weight: bold;">What is the best
-                    way to take Vivalis?</span>
-
+            <div class="card">
+                <h3>Advertising & Media</h3>
+                <ul class="contact-list">
+                    <li><img src="./assets/mail.webp" class="contact-icon" alt="email"> Sales: <a
+                            href="mailto:sales@usvivalis.store">sales@usvivalis.store</a></li>
+                    <li><img src="./assets/mail.webp" class="contact-icon" alt="email"> Media & PR: <a
+                            href="mailto:pr@usvivalis.store">pr@usvivalis.store</a></li>
+                    <li><img src="./assets/mail.webp" class="contact-icon" alt="email"> Careers: <a
+                            href="mailto:careers@usvivalis.store">careers@usvivalis.store</a></li>
+                </ul>
             </div>
-            <div class="answer">Take two capsules in the morning before breakfast and another capsule before dinner.
-                This routine is designed to support sustained performance and wellness throughout the day. You will
-                appreciate the results and how you feel.</div>
-        </div>
+        </section>
 
+        <section class="connect">
+            <p>Stay updated on product news, exclusive offers, and wellness insights.</p>
+            <a href="https://www.us-vivalis.store" target="_blank" rel="noopener">Official Website</a>
+        </section>
 
-        <div class="faq">
-            <div class="que" style="height: 51px; background-color:#dbdce6;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                    fill="none">
-                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span style="color:black; font-family:'Poppins'; font-weight: bold;">What if Vivalis
-                    doesn't work for me?</span>
-
-            </div>
-            <div class="answer">I am committed to your complete satisfaction, not just your acceptance of the product.
-                That’s why you can try Vivalis risk-free for 60 days with our “No Questions Asked 100% Money Back
-                Guarantee”. The only way to be truly convinced is to try this amazing formula for yourself and
-                experience the results firsthand..</div>
-        </div>
-
-
-
-        <div class="faq">
-            <div class="que" style="height: 51px; background-color:#dbdce6;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                    fill="none">
-                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span style="color:black; font-family:'Poppins'; font-weight: bold;">Where can I buy
-                    Vivalis and how quicklycan I get it?</span>
-
-            </div>
-            <div class="answer">To ensure you receive the authentic product and to guarantee the purity of the
-                ingredients, please purchase directly from our official website. We ship your order using a premium
-                carrier like FedEx or UPS. We strive to dispatch every order within 24 working hours, and to keep you
-                informed, you will receive an email with a tracking number so you can follow your package. On average,
-                domestic orders arrive at your doorstep between 5 to 10 days.
-
-            </div>
-        </div>
-
-
-
-        <div class="faq">
-            <div class="que" style="height: 51px; background-color:#dbdce6;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                    fill="none">
-                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span style="color:black; font-family:'Poppins'; font-weight: bold;">Is my purchase
-                    secure? How many times will you charge my card?</span>
-
-            </div>
-            <div class="answer">When purchasing Vivalis, you are only required to make a one-time payment on our
-                website. There are no additional future payments needed to benefit from this product. Our website
-                employs industry-leading security measures (such as SSL technology) to protect your information and
-                ensure your privacy.</div>
-        </div>
-
-    </div>
-
-    <script>
-        const faqs = document.querySelectorAll('.faq');
-
-        faqs.forEach(faq => {
-            const question = faq.querySelector('.que');
-
-            question.addEventListener('click', () => {
-                // Close all other active FAQs
-                faqs.forEach(otherFaq => {
-                    if (otherFaq !== faq) {
-                        otherFaq.classList.remove('active');
-                        otherFaq.classList.add('closing');
-                    }
-                });
-                // Toggle the clicked one
-                faq.classList.toggle('active');
-            });
-        });
-    </script>
-    <footer style="margin-top:30px;">
-        <p>
-            The information on this website has not been evaluated by the Food and Drug Administration. These products
-            are
-            not
-            intended to diagnose, treat, cure or prevent any disease.
-        </p>
-        <p>&copy; VIVALIS 2025 All Rights Reserved.</p>
-    </footer>
-
+        <footer>
+            <p>The information on this website has not been evaluated by the Food and Drug Administration. These
+                products are not intended to diagnose, treat, cure or prevent any disease.</p>
+            <p>&copy; Vivalis Labs 2025. All Rights Reserved.</p>
+        </footer>
+    </main>
 
 </body>
 
